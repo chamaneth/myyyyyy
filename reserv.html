@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservation</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <img src="image-removebg-preview.png" class="logo" alt="Hotel Liyera Logo">
+                <div class="underline-text">
+                    <ul class="nav-links">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="deluxe-ocean.html">ROOMS</a></li>
+                        <li><a href="wedding.html">EVENTS & WEDDINGS</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="contactu.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="button6">
+                    <a href="reserv.html" style="text-decoration: none;">
+                        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: black; margin: 0;">
+                            RESERVE NOW
+                        </p>
+                    </a>
+                </div>
+            </nav>
+        </header>
+      <div class="reservation-container">
+        <div class="Reservation">
+            <img src="reservation.webp">
+  <form class="reservation-form">
+    <div class="form-group">
+      <label for="check-in">Check In</label>
+      <input type="date" id="check-in" name="check-in">
+    </div>
+    <div class="form-group">
+      <label for="check-out">Check Out</label>
+      <input type="date" id="check-out" name="check-out">
+    </div>
+    <button type="submit" class="check-button">Check Availability</button>
+  </form>
+</div></div>
+
+ <div class="nav2">
+
+ </div>
+ <div class="footer">
+    <div class="contact-information">
+        <h4>Contact Information</h4>
+        <p>123/6<br>Kottawa<br>Pannipitiya</p>
+        <p>0112675432</p>
+        <p><a href="mailto:info@hotelliyera.com">info@hotelliyera.com</a></p>
+    </div>
+    <div class="useful-links">
+        <h4>Useful Links</h4>
+        <ul>
+            <li><a href="#">Our rooms</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="about">
+        <h4>About</h4>
+        <p>Discover Hotel Liyera in the heart of Sri Lanka, where modern luxury meets the island's rich heritage. 
+            Our beautifully designed rooms blend contemporary elegance with local charm, offering a serene escape.
+             Whether you're unwinding by the infinity pool or savoring authentic Sri Lankan cuisine, 
+            every corner of Hotel Liyera promises a unique and memorable experience.</p>
+    </div>
+    <div class="liyera-logo">
+        <img src="image-removebg-preview.png" alt="Liyera">
+    </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        const navlinks = document.querySelectorAll('.nav-links a'); 
+
+        
+        if (window.scrollY > 50) {
+            nav.style.backgroundColor = 'black';  
+            navlinks.forEach(link => link.style.color = '#fff');  
+        } else {
+            nav.style.backgroundColor = 'transparent';  
+            navlinks.forEach(link => link.style.color = 'white'); 
+        }
+    });
+    window.addEventListener('scroll', function() {
+const nav = document.querySelector('.nav-links');
+if (window.scrollY > 50) {
+nav-links.classList.add('scrolled');
+} else {
+nav-links.classList.remove('scrolled');
+}
+});
+
+</script>
+</html>
